@@ -1,14 +1,7 @@
-<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-
-        </div><!-- end .row -->
-    </div>
-</div><!-- end #body -->
-
-<footer id="footer" role="contentinfo">
+<footer class="text-center pb-5">
     &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
-    <?php _e('由 <a href="http://www.typecho.org">Typecho</a> 强力驱动'); ?>.
-</footer><!-- end #footer -->
-
-<?php $this->footer(); ?>
+    由 <a href="http://www.typecho.org">Typecho</a> 强力驱动.
+</footer>
 </body>
+
 </html>
