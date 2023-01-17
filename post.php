@@ -19,7 +19,14 @@
                     <div class="content markdown-body pt-3" itemprop="articleBody">
                         <?php $this->content(); ?>
                     </div>
+                    <div class="keywords">
+                        <?php _e('标签：'); ?><?php $this->tags(', ', true, 'none'); ?>
+                    </div>
                 </article>
+                <script>
+                    var cid = location.href.match(/\/archives\/(\d+)\//)[1]
+                    document.write('<a href="https://apee.top/admin/write-post.php?cid=' + cid + '">编辑文章</a>')
+                </script>
                 <hr>
                 <!-- <?php $this->need('comments.php'); ?> -->
                 <div class="comment mb-3 mb-sm-4">
