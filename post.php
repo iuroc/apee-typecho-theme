@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php $this->need('header.php'); ?>
-<div class="container py-3 py-lg-4">
+<div class="container py-3 py-sm-4">
     <div class="row">
         <div class="col-xl-9 col-lg-8">
             <div class="post-list">
