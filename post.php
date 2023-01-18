@@ -14,7 +14,7 @@
                             <?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?>
                         </a>
                     </div>
-                    <div class="content markdown-body pt-3" itemprop="articleBody">
+                    <div class="content markdown-body pt-3 mb-3" itemprop="articleBody">
                         <?php $this->content(); ?>
                     </div>
                     <div class="keywords">
