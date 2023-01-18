@@ -5,12 +5,12 @@
         <div class="col-xl-9 col-lg-8">
             <div class="post-list">
                 <article class="mb-3 mb-sm-4">
-                    <a class="mb-3 h4 text-center text-md-start fw-bold text-info-emphasis d-block" href="<?php $this->permalink() ?>"><?php $this->title() ?></a>
+                    <a class="mb-3 h4 text-center text-md-start fw-bold text-info-emphasis d-block" href="<?php $this->permalink() ?>" itemprop="name headline url"><?php $this->title() ?></a>
                     <div class="pb-3 border-bottom border-1 post-meta text-center text-md-start">
-                        <a href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a>
-                        <span class="ms-3"><?php $this->date(); ?></span>
+                        <a href="<?php $this->author->permalink(); ?>" itemprop="author name" itemscope itemtype="http://schema.org/Person"><?php $this->author(); ?></a>
+                        <time class="ms-3" datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
                         <span class="ms-3">分类：<?php $this->category(','); ?></span>
-                        <a href="<?php $this->permalink() ?>#comments" class="ms-3 d-none d-sm-inline">
+                        <a href="<?php $this->permalink() ?>#comments" class="ms-3 d-none d-sm-inline" itemprop="interactionCount discussionUrl">
                             <?php $this->commentsNum('评论', '1 条评论', '%d 条评论'); ?>
                         </a>
                     </div>
