@@ -17,10 +17,10 @@
                     <div class="content markdown-body pt-3 mb-3" itemprop="articleBody">
                         <?php $this->content(); ?>
                     </div>
-                    <div class="keywords">
-                        <?php _e('标签: '); ?><?php $this->tags(', ', true, 'none'); ?>
-                    </div>
                 </article>
+                <div class="keywords p-3 shadow-sm border rounded mb-3 mb-sm-4">
+                    <?php _e('标签：'); ?><?php $this->tags(', ', true, 'none'); ?>
+                </div>
                 <script>
                     var cid = location.href.match(/\/archives\/(\d+)\//)[1]
                     document.write('<a href="https://apee.top/admin/write-post.php?cid=' + cid + '">编辑文章</a>')
