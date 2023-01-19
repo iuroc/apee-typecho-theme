@@ -28,13 +28,13 @@
                 <hr>
                 <?php $this->need('comments.php'); ?>
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="border rounded shadow-sm p-3">
+                    <div class="col-md-6 mb-4">
+                        <div class="border rounded shadow-sm p-3 text-truncate">
                             上一篇：<?php $this->thePrev('%s', '没有了'); ?>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="border rounded shadow-sm p-3">
+                    <div class="col-md-6 mb-4">
+                        <div class="border rounded shadow-sm p-3 text-truncate">
                             下一篇：<?php $this->theNext('%s', '没有了'); ?>
                         </div>
                     </div>
